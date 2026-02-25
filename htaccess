@@ -1,0 +1,13 @@
+# جلوگیری از اجرای اسکریپت های PHP در فولدر assets
+<Directory "/path/to/public_html/crm/assets">
+    php_flag engine off
+</Directory>
+
+# جلوگیری از لیست شدن محتویات فولدر
+Options -Indexes
+
+# جلوگیری از دسترسی به فایل‌های حساس
+<FilesMatch "(db\.php|database\.sql)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

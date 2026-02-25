@@ -1,0 +1,67 @@
+:root {
+    --main-orange: #db6534;
+    --hover-orange: #b34f29;
+}
+
+body {
+    font-family: 'Tahoma', 'Vazirmatn', sans-serif;
+    background-color: #f1f3f5;
+    direction: rtl;
+    text-align: right;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--main-orange);
+}
+
+.btn-primary, .btn-success {
+    background-color: var(--main-orange) !important;
+    border-color: var(--main-orange) !important;
+    color: white !important;
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: var(--hover-orange) !important;
+    border-color: var(--hover-orange) !important;
+}
+
+.text-primary {
+    color: var(--main-orange) !important;
+}
+
+.table thead {
+    background-color: var(--main-orange);
+    color: white;
+}
+
+.badge.bg-success {
+    font-size: 0.9rem;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    background-color: white;
+}
+
+.card-header {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--main-orange);
+}
+
+.header-logo {
+    height: 45px;
+}
+
+.rotate-icon {
+    transition: transform 0.3s ease;
+    color: var(--main-orange);
+}
+
+.rotate-icon.open {
+    transform: rotate(180deg);
+}
+
+.toast-body {
+    font-size: 0.95rem;
+}
